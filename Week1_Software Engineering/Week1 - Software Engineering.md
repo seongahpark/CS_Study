@@ -1,6 +1,6 @@
 # Week1 - Software Engineering
 
-[출처] (https://github.com/gyoogle/tech-interview-for-developer)
+[출처 - gyoogle](https://github.com/gyoogle/tech-interview-for-developer)
 
 ## 클린코드와 리팩토링
 
