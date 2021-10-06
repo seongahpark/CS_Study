@@ -1,7 +1,16 @@
 # CS_Study
 CS_Study Every Thu 9 p.m
 
-2. CS 스터디
+## Contributor
+|이름|GitHub|
+|---|---|
+|성아|[@seongahpark](https://github.com/seongahpark)|
+|경림|[@ohohoi](https://github.com/ohohoi)|
+|보성|[@suha1515](https://github.com/suha1515)|
+|현준|[@hhj3258](https://github.com/hhj3258)|
+|성진|[@Thedum2](https://github.com/Thedum2)|
+
+## 진행방식
 1) 대 주제 1 - 소 주제 2 정해서 이론 마크다운 파일로 금요일까지 깃허브에 업로드 (제가함)
 <대 주제 목록 : 컴구, OS, DB, 네트워크, 소공, 디자인패턴, 자료구조 등등..>
 2) 각자 스터디 후 인당 총 질문 3개 준비해오기
