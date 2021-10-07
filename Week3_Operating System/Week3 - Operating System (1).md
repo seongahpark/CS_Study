@@ -12,7 +12,7 @@
 
 [4. 인터럽트 (Interrupt)](#인터럽트-(Interrupt))
 
-[5. 시스템 콜 (System Call)](#시스템 콜-(System Call))
+[5. 시스템 콜 (System Call)](#시스템-콜-(System-Call))
 
 -----
 
