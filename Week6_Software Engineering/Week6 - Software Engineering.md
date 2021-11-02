@@ -119,13 +119,110 @@
 
 ## 함수형 프로그래밍
 
-> 순수 함수를 조합하고 공유 상태, 변경 가능한 데이터 및 부작용을 피해 소프트웨어를 만드는 프로세스
+> 부수효과를 없애고 순수 함수를 만들어 모듈화 수준을 높이는 프로그래밍 패러다임
 
 
 
-![img](https://user-images.githubusercontent.com/6733004/46247710-5ce5fb00-c44a-11e8-9400-16dd44626820.png)
+<img src="https://user-images.githubusercontent.com/6733004/46247710-5ce5fb00-c44a-11e8-9400-16dd44626820.png" alt="img" style="zoom:80%;" />
 
-사진은 빼먹으면 섭섭할 것 같아서 넣었다.
+<div align="center">사진은 빼먹으면 섭섭할 것 같아서 넣었다.</div>
+
+1. **명령형 프로그래밍 VS 선언형 프로그래밍**
+
+   >- **명령형 프로그래밍 (절차지향, 객체지향)**
+   >
+   >  > 상태와 상태를 변경시키는 관점에서 연산을 설명하는 방식 (How)
+   >  >
+   >  > 알고리즘을 명시, 목표는 명시 X
+   >
+   >- **선언형 프로그래밍**
+   >
+   >  > How 보다는 What을 설명하는 방식
+   >  >
+   >  > 알고리즘 명시 X, 목표만 명시
+
+   함수형 코드는 명령형 프로그래밍보다 더 간결하고 예측가능하여 테스트가 쉽다
+
+   즉, 함수형 프로그램은 ``부작용을 제거하여 프로그램의 동작을 이해하고 예측을 용이``하게 한다
+
+   프로그래밍 언어나 방식을 배우기 보다는 함수형 프로그래밍 사고를 배우는 것
+
+   단, 익숙치 않으면 더 복잡해보이고 이해하기 어렵다
+
+   
+
+2. **함수형 프로그래밍**
+
+   - 순수 함수 (Pure Functions) : 입출력이 순수, 반드시 하나 이상의 인자를 받고, 받은 인자를 처리해 반드시 결과를 돌려줘야 함. 인자 외 다른 변수는 사용 X
+   - 합성 함수 (Function Composition) : 새로운 함수를 만들어내거나 계산하기 위해 둘 이상의 함수를 조합하는 과정. 여러 작은 순수 함수들을 연쇄적 또는 병렬로 호출하여 더 큰 함수로 만듦
+   - 공유상태 피하기 (Avoid Shared State)
+   - 상태변화 피하기 (Avoid Mutating State)
+   - 부작용 피하기 (Avoid Side Effects) : 원본 데이터는 절대 불변
+
+   > **부수 효과 (Side Effect) ** : 주어진 값 이외의 외부 변수 및 프로그래밍 실행에 영향을 끼침
+   >
+   > - 변수의 값이 변경
+   > - 자료 구조를 제자리에서 수정
+   > - 객체의 필드값을 설정
+   > - 예외나 오류가 발생하여 실행이 중단
+   > - 콘솔 또는 파일 I/O가 발생
+
+   대표적인 자바 스크립트 함수형 프로그래밍 함수 : ``map``, ``filter``, ``reduce``
+
+   
+
+3. **Java에서의 함수형 프로그래밍**
+
+   - Java 8이 릴리즈되면서 함수형 프로그래밍이 가능
+   - Java에서 활용할 수 있는 함수형 프로그래밍 : ``람다식``, ``stream api``, ``함수형 인터페이스``
+
+   ```java
+   import java.util.Arrays;
+   improt java.util.List;
+   
+   public class stream{
+       public static void main(Strings[] args){
+           List<String> myList = Array.asList("a", "b", "c", "d", "e");
+           
+           //기존 방식
+           for(int i=0; i<myList.size(); i++){
+               String s = myList.get(i);
+               if(s.startsWith("c")){
+                   System.out.println(s.toUpperCase());
+               }
+           }
+           
+           //stream API를 이용
+           myList.stream()
+               .filter(s -> s.startswith("c"))
+               .map(String::toUpperCse)
+               .forEach(System.out::println);
+       }
+   }
+   ```
+
+   함수형 프로그래밍으로 내가 무엇을 구현했는지 직관적으로 명확히 알 수 있다.
+
+   
+
+4. **C++에서의 함수형 프로그래밍** (게임개발 측면)
+
+   >기본적으로 C++, C# 등의 언어는 객체지향 언어이다.
+   >
+   >함수형 프로그래밍 패러다임을 적용하려면 다 작은 함수로 쪼개서 만들어 합쳐서 개발하는 것이다.
+   >
+   >실제로 현업에서도 유행하는 패러다임이라고 한다
+
+   ```C++
+   private static bool isAlive = true;
+   
+   private bool chkHp(int _hp){
+       if(_hp < 0) isAlive = false;
+       return isAlive;
+   }
+   ```
+
+   
 
 ---
 
@@ -134,3 +231,13 @@
 solid 파일에서 ocp에서 instance of와 다운캐스팅 부분 추가하기
 
   
+
+게임 개발에서의 함수형 프로그래밍
+
+-> 기본적으로 c++이나 c# 같은 경우는 객체지향 프로그래밍이다
+
+함수형 프로그래밍 패러다임은 기본적으로 조건문 같은걸 쓸 때도 이걸 다 함수로 만들어서 쓰는게 함수형 프로그래밍
+
+수업시간 때 처럼 다 작은 함수로 만들어서 그걸 합치는 것
+
+실제로 이게 게임 개발 쪽에서도 유행하는 개발 방식이라고 함
