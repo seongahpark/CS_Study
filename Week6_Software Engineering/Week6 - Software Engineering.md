@@ -226,18 +226,86 @@
 
 ---
 
-내용 추가할 부분
+### 추가 내용
 
-solid 파일에서 ocp에서 instance of와 다운캐스팅 부분 추가하기
+[출처](https://zuyo.tistory.com/891)
 
-  
+#### 업 캐스팅 (Upcasting)
 
-게임 개발에서의 함수형 프로그래밍
+> 서브 클래스는 슈퍼 클래스의 모든 특성을 상속 받는다. 즉, **서브 클래스가 슈퍼클래스가 되는 것이 업 캐스팅이다**.
+>
+> 업캐스팅시 자식클래스의 멤버는 접근이 불가해지고, 부모클래스의 멤버만 사용 가능하다.
+>
+> 그러나, 자식클래스가 부모클래스의 메소드를 오버라이딩 했다면, 오버라이딩 된 자식클래스의 메소드가 호출된다.
 
--> 기본적으로 c++이나 c# 같은 경우는 객체지향 프로그래밍이다
+```java
+class Person{ //슈퍼클래스
+	String name;
+	String id;
+	
+	public Person(String name){
+		this.name = name;
+	}
+}
 
-함수형 프로그래밍 패러다임은 기본적으로 조건문 같은걸 쓸 때도 이걸 다 함수로 만들어서 쓰는게 함수형 프로그래밍
+class Student extends Person{ //서브클래스
+	String grade;
+	
+	public Student(String name){
+        super(name);
+    }
+    public Student(String name, String grade){
+        super(name);
+        this.grade = grade;
+    }
+}
 
-수업시간 때 처럼 다 작은 함수로 만들어서 그걸 합치는 것
+public class Example{
+    public static void main(String[] args){
+        Person person;
+        Student student = new Student("학생");
+        person = student; //업캐스팅
+        
+        System.out.printpln(person.name);
+        person.grade = "A"; // 에러 -> 서브클래스 Student의 멤버 grade에 접근 X
+    }
+}
+```
 
-실제로 이게 게임 개발 쪽에서도 유행하는 개발 방식이라고 함
+
+
+#### 다운 캐스팅 (DownCasting)
+
+> 서브 클래스가 슈퍼 클래스로 변했을 때 서브 클래스의 인스턴스는 잠시 가려져 있을 뿐, 사라지지 않는다. **서브 클래스의 원래 특성으로 돌려놓는게 다운 캐스팅**.
+>
+> 다운 캐스팅은 업 캐스팅과 달리 명시적으로 타입을 지정해야 함. (강제형변환)
+
+```java
+public class Example{
+    public static void main(String[] args){
+        Person person = new Student("학생"); // 업캐스팅
+        
+        Student student = (Student)person; //다운캐스팅
+        
+        System.out.println(student.name);
+        student.grade = "A"; // 서브클래스의 멤버에 접근이 가능
+    }
+}
+```
+
+
+
+#### Instance Of 연산자
+
+객체가 어떤 클래스 타입인지 알려주는 연산자. 업캐스팅 된 객체라도 true를 반환한다.
+
+**형태** : 결과 값은 boolean
+
+> **[객체 레퍼런스] instanceof [클래스 타입]**
+
+```java
+if(person instanceof Person){
+	System.out.println("사람이 맞다");
+}
+```
+
