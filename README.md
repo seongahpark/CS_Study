@@ -20,3 +20,6 @@ CS_Study Every Thu 9 p.m
 3) 답변에 대한 질문자의 피드백
 4) 각자 받았던 질문 및 꼬리질문 정리해서 깃에 업로드
 
+# 📌 Computer Science
+- Operating System
+- Software Engineering
