@@ -21,5 +21,64 @@ CS_Study Every Thu 9 p.m
 4) 각자 받았던 질문 및 꼬리질문 정리해서 깃에 업로드
 
 # 📌 Computer Science
-- Operating System
-- Software Engineering
+- ### Operating System
+
+  - [운영체제란](https://github.com/seongahpark/CS_Study/blob/main/Week3_Operating%20System/Week3%20-%20Operating%20System%20(1).md)
+  - [프로세스 vs 스레드](https://github.com/seongahpark/CS_Study/blob/main/Week3_Operating%20System/Week3%20-%20Operating%20System%20(1).md)
+  - [프로세스 주소 공간](https://github.com/seongahpark/CS_Study/blob/main/Week3_Operating%20System/Week3%20-%20Operating%20System%20(1).md)
+  - [인터럽트 (Interrupt)](https://github.com/seongahpark/CS_Study/blob/main/Week3_Operating%20System/Week3%20-%20Operating%20System%20(1).md)
+  - [시스템 콜 (System Call)](https://github.com/seongahpark/CS_Study/blob/main/Week3_Operating%20System/Week3%20-%20Operating%20System%20(1).md)
+  - [PCB와 Context Switching](https://github.com/seongahpark/CS_Study/blob/main/Week4_Operating%20System/Week%204%20-%20Operating%20System.md)
+  - [IPC (Inter Process Communication)](https://github.com/seongahpark/CS_Study/blob/main/Week4_Operating%20System/Week%204%20-%20Operating%20System.md)
+  - [CPU 스케줄링](https://github.com/seongahpark/CS_Study/blob/main/Week4_Operating%20System/Week%204%20-%20Operating%20System.md)
+  - [데드락 (Deadlock)](https://github.com/seongahpark/CS_Study/blob/main/Week5_Operating%20System/Week%205%20-%20Operating%20System.md)
+  - [Race Condition](https://github.com/seongahpark/CS_Study/blob/main/Week5_Operating%20System/Week%205%20-%20Operating%20System.md)
+  - [세마포어 (Semaphore) & 뮤텍스 (Mutex)](https://github.com/seongahpark/CS_Study/blob/main/Week5_Operating%20System/Week%205%20-%20Operating%20System.md)
+  - [페이징 & 세그먼테이션](https://github.com/seongahpark/CS_Study/blob/main/Week7_Operating%20System/Week7%20-%20Operating%20System.md)
+  - [페이지 교체 알고리즘](https://github.com/seongahpark/CS_Study/blob/main/Week7_Operating%20System/Week7%20-%20Operating%20System.md)
+  - [메모리 (Memory)](https://github.com/seongahpark/CS_Study/blob/main/Week8_Operating%20System/Week8%20-%20Operating%20System.md)
+  - [파일 시스템](https://github.com/seongahpark/CS_Study/blob/main/Week8_Operating%20System/Week8%20-%20Operating%20System.md)
+
+<br>
+
+- ### Software Engineering
+
+  - [클린코드 & 리팩토링](https://github.com/seongahpark/CS_Study/blob/main/Week1_Software%20Engineering/Week1%20-%20Software%20Engineering.md)
+  - [TDD (Text Driven Development)]
+  - [애자일 (Agile)]
+  - [객체 지향 프로그래밍](https://github.com/seongahpark/CS_Study/blob/main/Week6_Software%20Engineering/Week6%20-%20Software%20Engineering.md)
+  - [함수형 프로그래밍](https://github.com/seongahpark/CS_Study/blob/main/Week6_Software%20Engineering/Week6%20-%20Software%20Engineering.md)
+  - [서드 파티 (3rd Party)]
+  - [마이크로서비스 아키텍처 (MSA)]
+
+<br>
+
+- ### Design Pattern
+
+  - [디자인 패턴 개요 (Overview)](https://github.com/seongahpark/CS_Study/blob/main/Week2_Design%20Pattern/Week2_Design%20Pattern.md)
+  - [SOLID](https://github.com/seongahpark/CS_Study/blob/main/Week2_Design%20Pattern/Week2_Design%20Pattern.md)
+  - [어댑터 패턴](https://github.com/seongahpark/CS_Study/blob/main/Week2_Design%20Pattern/Week2_Design%20Pattern.md)
+  - [싱글톤 패턴](https://github.com/seongahpark/CS_Study/blob/main/Week2_Design%20Pattern/Week2_Design%20Pattern.md)
+  - [탬플릿 메소드 패턴](https://github.com/seongahpark/CS_Study/blob/main/Week2_Design%20Pattern/Week2_Design%20Pattern.md)
+  - [팩토리 메소드 패턴](https://github.com/seongahpark/CS_Study/blob/main/Week2_Design%20Pattern/Week2_Design%20Pattern.md)
+  - [옵저버 패턴](https://github.com/seongahpark/CS_Study/blob/main/Week2_Design%20Pattern/Week2_Design%20Pattern.md)
+  - [스트레티지 패턴](https://github.com/seongahpark/CS_Study/blob/main/Week2_Design%20Pattern/Week2_Design%20Pattern.md)
+  - [컴포넌트 패턴](https://github.com/seongahpark/CS_Study/blob/main/Week2_Design%20Pattern/Week2_Design%20Pattern.md)
+  - [MVC 패턴](https://github.com/seongahpark/CS_Study/blob/main/Week2_Design%20Pattern/Week2_Design%20Pattern.md)
+
+<br>
+
+- ### Data Structure
+
+  - [Array]
+  - [Linked List]
+  - [Array & ArrayList & Linked List]
+  - [스택 (Stack) & 큐 (Queue)]
+  - [힙 (Heap)]
+  - [트리 (Tree)]
+  - [이진탐색트리 (Binary Search Tree)]
+  - [해시 (Hash)]
+  - [트라이 (Trie)]
+  - [B-Tree & B+Tree]
+
+<br>
