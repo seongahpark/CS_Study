@@ -81,8 +81,45 @@ Thanks to
   - [힙 (Heap)](https://github.com/seongahpark/CS_Study/blob/ef77f2eb80d326f18b12625e18e9e3a01d54df83/Week09_Data%20Structure/Week9%20-%20Data%20Structure.md)
   - [트리 (Tree)]
   - [이진탐색트리 (Binary Search Tree)]
+  - [그래프 (Graph)]
   - [해시 (Hash)]
   - [트라이 (Trie)]
   - [B-Tree & B+Tree]
 
 <br>
+
+- ### Network
+
+  - [OSI 7계층]
+  - [TCP 3 & 4 way handshake]
+  - [TCP/IP 흐름제어 & 혼잡제어]
+  - [UDP]
+  - 대칭키 & 공개키
+  - HTTP & HTTPS
+  - TLS / SSL HandShake
+  - 로드 밸런싱 (Load Balancing)
+  - Blocking / Non-Blocking & Synchronous /Asynchronous
+  - Blocking & Non-Blocking I/O
+
+
+
+<br>
+
+# 📌 Algorithm
+
+- [거품 정렬 (Bubble Sort)]
+- [선택 정렬 (Selection Sort)]
+- [삽입 정렬 (Insertion Sort)]
+- [퀵 정렬 (Quick Sort)]
+- [병합 정렬 (Merge Sort)]
+- [힙 정렬 (Heap Sort)]
+- [기수 정렬 (Radix Sort)]
+- [계수 정렬 (Counting Sort)]
+- [이분 탐색 (Binary Search)]
+- [해시 테이블 (Hash Table)]
+- [DFS & BFS]
+- [최장 증가 수열 (LCS)]
+- [최소 공통 조상 (LCA)]
+- [동적 계획법 (DP)]
+- [다익스트라 (Dijkstra) 알고리즘]
+- [비트마스크 (BitMask)]
