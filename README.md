@@ -94,12 +94,12 @@ Thanks to
   - [TCP 3 & 4 way handshake]
   - [TCP/IP 흐름제어 & 혼잡제어]
   - [UDP]
-  - 대칭키 & 공개키
-  - HTTP & HTTPS
-  - TLS / SSL HandShake
-  - 로드 밸런싱 (Load Balancing)
-  - Blocking / Non-Blocking & Synchronous /Asynchronous
-  - Blocking & Non-Blocking I/O
+  - [대칭키 & 공개키]
+  - [HTTP & HTTPS]
+  - [TLS / SSL HandShake]
+  - [로드 밸런싱 (Load Balancing)]
+  - [Blocking / Non-Blocking & Synchronous /Asynchronous]
+  - [Blocking & Non-Blocking I/O]
 
 
 
