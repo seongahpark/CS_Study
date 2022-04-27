@@ -15,12 +15,38 @@
     1. **unique_ptr**
         - 하나의 스마트 포인터만이 특정 객체를 소유할 수 있도록, 객체에 소유권 개념을 도입한 스마트 포인터
         - 해당 객체의 소유권을 가지고 있을 때만, 소멸자가 해당 객체를 삭제할 수 있다
-        - unique_ptr 인스턴스는 `move()` 멤버 함수를 통해 소유권 이전이 가능하다
-        - 하지만, 복사는 볼가능하다
+        - unique_ptr 인스턴스는 `move()` 멤버 함수를 통해 소유권 이전이 가능하다. 단, 복사는 불가능
+        - 소유권이 이전되면, 이전 unique_ptr 인스턴스는 더는 해당 객체를 소유하지 않게 재설정됨
+
+        ```cpp
+        unique_ptr<int> ptr01(new int(5)); // int형 unique_ptr인 ptr01을 선언하고 초기화함.
+        auto ptr02 = move(ptr01);          // ptr01에서 ptr02로 소유권을 이전함.
+        unique_ptr<int> ptr03 = ptr01;  // 대입 연산자를 이용한 복사는 오류를 발생시킴. 
+        ```
     
     2. **shared_ptr**
 
+        - 하나의 특정 객체를 참조하는 스마트 포인터가 총 몇 개인지 참조하는 스마트 포인터
+        - 참조하고 있는 스마트 포인터의 개수를 참조 횟수(reference count)라고 한다
+        - 참조 횟수는 특정 객체에 새로운 shared_ptr이 추가될 때마다 1씩 증가하며, 수명이 다할 때마다 1씩 감소
+        - 참조 횟수가 0이 되면 `delete` 키워드를 사용하여 메모리를 자동으로 해제한다
+
+        ```cpp
+        shared_ptr<Person> hong = make_shared<Person>("길동", 29);
+        cout << "현재 소유자 수 : " << hong.use_count() << endl; // 1
+        auto han = hong;
+        cout << "현재 소유자 수 : " << hong.use_count() << endl; // 2
+        han.reset(); // shared_ptr인 han을 해제함.
+        cout << "현재 소유자 수 : " << hong.use_count() << endl; // 1
+        ```
+
+        - 한계점 : 서로가 상대방을 가리키는 shared_ptr을 가지고 있다면, 참조 횟수는 절대 0이 되지 않으므로 메모리는 영원히 해제되지 않는다 -> **순환 참조 (circular reference)**
+
     3. **weak_ptr**
+
+        - shared_ptr의 단점을 보완하기 위해 사용하는 스마트 포인터
+        - 하나 이상의 shared_ptr 인스턴스가 소유하는 객체에 대한 접근을 제공하지만, 소유자의 수에는 포함되지 않는 스마트 포인터
+        - shared_ptr 인스턴스 사이의 순환 참조를 제거하기 위해 사용된다
 
 
 2. **오른값 vs 좌측값**
