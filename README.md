@@ -1,16 +1,22 @@
 # CS_Study
 CS_Study Every Thu 9 p.m
 
-## Contributor
+## Current Member
+
 |이름|GitHub|
 |---|---|
 |성아|[@seongahpark](https://github.com/seongahpark)|
-|경림|[@ohohoi](https://github.com/ohohoi)|
-|보성|[@suha1515](https://github.com/suha1515)|
-|현준|[@hhj3258](https://github.com/hhj3258)|
-|성진|[@Thedum2](https://github.com/Thedum2)|
-|예리|[@py6578](https://github.com/py6578)|
 |정민|[@happyOBO](https://github.com/happyOBO)|
+|세환|[@dochigrammer](https://github.com/dochigrammer)|
+
+## Contributor
+
+|이름|GitHub|이름|Github|
+|---|---|---|---|
+|성아|[@seongahpark](https://github.com/seongahpark)|경림|[@ohohoi](https://github.com/ohohoi)|
+|보성|[@suha1515](https://github.com/suha1515)|현준|[@hhj3258](https://github.com/hhj3258)|
+|성진|[@Thedum2](https://github.com/Thedum2)|예리|[@py6578](https://github.com/py6578)|
+|정민|[@happyOBO](https://github.com/happyOBO)|세환|[@dochigrammer](https://github.com/dochigrammer)|
 
 ## 진행방식
 1. 대 주제 1 - 소 주제 2 정해서 이론 마크다운 파일로 금요일까지 깃허브에 업로드 (제가함)
